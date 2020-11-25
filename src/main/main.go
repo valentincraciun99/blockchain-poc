@@ -1,10 +1,12 @@
 package main
 
 import (
-	"fmt"
-	"rsc.io/quote"
+	"github.com/valentincraciun99/blockchain-poc/blockchain"
 )
 
 func main() {
-	fmt.Print(quote.Hello())
+	chain:= blockchain.InitBlockChain()
+
+	chain.AddBlock("First")
+
 }
